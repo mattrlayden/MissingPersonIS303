@@ -1,8 +1,4 @@
-# MissingPersonIS303
+# MissingPersons 1 Group Project
 IS303 
-Whats up gang
-I can finally edit
 
 
-
-hey hi hello

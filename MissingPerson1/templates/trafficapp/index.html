@@ -1,36 +1,29 @@
-<<<<<<< HEAD
-{% extends 'base.html' %}
-{% block content %}
 {% load static %}
-
-    <p>This is our homepage index.html</p>
-
-{% endblock %}
-=======
 <!DOCTYPE html>
 <html>
 <head>
   <title>{% block title %}{% endblock %}</title>
-  {% load bootstrap5 %}
-  {% bootstrap_css %}
-  {% bootstrap_javascript %}
-  <br>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body>
+<br>
 <div class="container">
-  <ul class="nav bg-info">
+<ul class="nav bg-info">
     <li class="nav-item">
-      <a class="nav-link link-light" href="/">HOME</a>
+    <a class="nav-link link-light" href="/">HOME</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-light" href="/members">MISSING PEOPLE</a>
+    <a class="nav-link link-light" href="/members">MISSING PEOPLE</a>
     </li>
     <li class="nav-item">
         <a class="nav-link link-light" href="/about">ABOUT US</a>
+    </li>
     <li class="nav-item">
         <a class="nav-link link-light" href="/contact">CONTACT</a>
-  </ul>
-</head>
-<body>
-
+    </li>
+</ul>
+</div>
 
 <br>
 <br>
@@ -208,13 +201,10 @@
         </tr>
         </tbody></table>
 
-
   {% block content %}
   {% endblock %}
 </div>
+<script src= "{% static 'js/bootstrap.bundle.min.js' %}">  </script>
 </body>
-
-
-    </div>
 </html>
->>>>>>> 0fe3dca64ffcbb89e20c43549a77d585ef6a37c1
+

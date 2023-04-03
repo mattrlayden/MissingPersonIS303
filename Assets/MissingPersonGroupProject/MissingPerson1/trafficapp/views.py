@@ -14,7 +14,7 @@ def MissingpeoplePageView(request):
 def ContactPageView(request):
     return render(request, 'trafficapp/contact.html')
 
-def indexPageView(request):
+def MissingpeoplePageView(request):
 
     lstData = [
         {
@@ -199,4 +199,4 @@ def indexPageView(request):
         "data" : lstData
     } 
 
-    return render(request, 'trafficapp/index.html', context)
+    return render(request, 'trafficapp/missingpeople.html', context)

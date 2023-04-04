@@ -2,6 +2,22 @@
 {% block content %}
 {% load static %}
 
-    <p> This is index.html </p>
+<header class="masthead">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="masthead-heading text-uppercase mb-4 fs-1 text-center">Welcome to Finding Missing People!</h1>
+          <p class="lead mb-5 fs-4 text-center">We are dedicated to raising awareness about missing persons in Utah and providing resources to help locate them. Our mission is to bring hope to the families and friends of missing persons, and to encourage our community to be vigilant and compassionate.</p>
+          <div class="text-center">
+            <a class="btn btn-primary btn-lg px-4 py-3" href="{% url 'about' %}">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <br class="d-lg-none">
+          <img src="{% static 'img/utahflag.jpg' %}" alt="Utah Flag" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </header>
 
 {% endblock %}
